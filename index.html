@@ -5,9 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Gateway Page</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Payment Page</p>
-    <h2>Have to work</h2>
+    <div class="container">
+        <div class="window">
+            <div class="order-info">
+                <div class="order-info-content">
+                    <h2>Order Summary</h2>
+                    <div class="line"></div>
+                    <table class="order-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://b2b-pickaboocdn.azureedge.net/media/catalog/product/cache/a4a71470c99ce7a4925275fbc94e38e5/r/e/realme-c25s-4gb-64gb-water-grey-7.jpg" alt="Realme C25s" class="full-width">
+                                </td>
+                                <td>
+                                    <br><span class="thin">Realme C25s</span>
+                                    <br> 4GB Ram 64GB Rom <br> <span class="thin small"> Color : Water Black <br><br></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="price">৳13,990</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="line"></div>
+                    <table class="order-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://b2b-pickaboocdn.azureedge.net/media/catalog/product/cache/a4a71470c99ce7a4925275fbc94e38e5/v/i/vivo-v20-se.jpg-blue.jpg-2.jpg" alt="vivo V20 SE" class="full-width">
+                                </td>
+                                <td>
+                                    <br><span class="thin">vivo V20 SE</span>
+                                    <br> 8GB Ram 64Gb Rom <br> <span class="thin small"> Color : Polar Blue <br><br></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="price">৳22,990</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="line"></div>
+                    <table class="order-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://b2b-pickaboocdn.azureedge.net/media/catalog/product/cache/a4a71470c99ce7a4925275fbc94e38e5/s/a/samsung-galaxy-m12-blue.jpg" alt="Samsung Galaxy M12" class="full-width">
+                                </td>
+                                <td>
+                                    <br><span class="thin">Samsung Galaxy M12</span>
+                                    <br> 6GB Ram 128Gb Ram <br><span class="thin small"> Color : Blue <br><br></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="price">৳18,990</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="line"></div>
+                    <div class="total">
+                        <span style="float: left;">
+                            <div class="thin dense">Discount 10%</div>
+                            <div class="thin dense">Delivery</div>
+                            Total
+                        </span>
+                        <span style="float: right; text-align: right;">
+                            <div class="thin dense">৳5,200</div>
+                            <div class="thin dense">৳100</div>
+                            ৳49,500
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="credit-info">
+                <div class="credit-info-content">
+                    <table class="half-input-table">
+                        <tr><td>Please Select Your Card :><div class="dropdown" id="card-dropdown">
+                            <div   class="dropdown-btn" id="current-id">Visa</div>
+                            <div class="dropdown-select">
+                                <ul>
+                                    <li>Master Card</li>
+                                    <li>American Express</li>
+                                </ul>
+                            </div>
+                        </div></td></tr>
+                    </table>
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa logo." class="credit-card-image" id="credit-card-image">
+                    Card Number
+                    <input type="tel" class="input-field">
+                    Pin Number
+                    <input type="password" class="input-field">
+                    <table class="half-input-table">
+                        <tr>
+                            <td>Expiery Date
+                                <input type="date" class="input-field">
+                            </td>
+                            <td>CVV
+                                <input type="tel" class="input-field">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <button class="pay-btn">Checkout</button>
+
+                </div>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>
